@@ -21,7 +21,7 @@ function App() {
   const [group,setGroup] = useState(parseInt(localStorage.getItem("kanGroup"))||2);
   const [sort,setSort] = useState(parseInt(localStorage.getItem("kanSort"))||1);
   let priority = {0:{'name':'No Priority'},1:{'name':'Low'},2:{'name':'Medium'},3:{'name':'High'},4:{'name':'Urgent'}};
-  let priority_icons = [<AiOutlineDash style={{color:'darkgray'}}/>,<MdOutlineSignalCellularAlt1Bar style={{color:'darkgray'}}/>,<MdOutlineSignalCellularAlt2Bar style={{color:'darkgray'}} />,<MdOutlineSignalCellularAlt  style={{color:'darkgray'}}/>,<BsExclamationSquareFill  style={{color:'darkgray'}}/>]
+  let priority_icons = [<AiOutlineDash style={{color:'darkgray'}}/>,<MdOutlineSignalCellularAlt1Bar style={{color:'darkgray'}}/>,<MdOutlineSignalCellularAlt2Bar style={{color:'darkgray'}} />,<MdOutlineSignalCellularAlt  style={{color:'darkgray'}}/>,<BsExclamationSquareFill  style={{color:'orange'}}/>]
   const inprog = <div className='inProgress'><BiSolidCircleHalf size={15} color='orange'/></div>;
   let statu = {0:{'name':'Backlog'},1:{'name':'Todo'},2:{'name':'In progress'},3:{'name':'Done'},4:{'name':'Canceled'}};
   let status_icons = {2:inprog,1:<TbCircleDotted style={{color:'darkgray'}}/>,3:<AiFillCheckCircle style={{color:'blue'}}/>,4:<MdCancel style={{color:'darkgray'}}/>,0:<FaRegCircle style={{color:'darkgray'}}/>}
