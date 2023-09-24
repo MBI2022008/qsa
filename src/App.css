@@ -6,7 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.inProgress{
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: whitesmoke;
+    border: 1px solid orange;
+    display: flex;
+    align-items: center;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
